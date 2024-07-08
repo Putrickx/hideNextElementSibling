@@ -1,0 +1,27 @@
+.content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, opacity 0.5s; /* Transitions for max-height and opacity */
+}
+
+.content.visible {
+    opacity: 1;
+    max-height: 320px; /* Adjust to a value that accommodates your content */
+    transition: max-height 0.5s, opacity 0.5s; /* Ensure both transitions apply */
+}
+
+
+.arrow {
+    margin-left: 10px;
+    transition: transform 0.3s;
+    display: inline-block; /* Ensure the arrow can rotate properly */
+}
+
+.arrow.right {
+    transform: rotate(0deg);
+}
+
+.arrow.down {
+    transform: rotate(90deg);
+}
